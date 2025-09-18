@@ -1,19 +1,40 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import style from '../style';
 
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View>
-          <Text>Welcome to snapfame</Text>
+    <ScrollView>
+      <SafeAreaView style={style.container}>
+        <View style={style.topnav}>
+          <View style={style.flexRow}>
+            <Image
+              source={require('../../assets/images/image.png')}
+              style={style.profileImage}
+            />
+            <View>
+              <Text style={style.title}>Yuven Carlson</Text>
+              <Text style={style.title}>Welcome to snapfame</Text>
+            </View>
+          </View>
+          <TouchableOpacity>
+            <Ionicons name="alert" size={24} color={'white'} />
+          </TouchableOpacity>
         </View>
-      </ScrollView>
-    </SafeAreaView>
+
+        <View style={style.header}>
+            <Text style={style.headingWhite}>Ballance: $100</Text>
+            <TouchableOpacity style={style.button}>
+              Top up
+            </TouchableOpacity>
+        </View>
+        <View style={style.column}>
+          <Text style={style.title}>Top Services</Text>
+        </View>
+      </SafeAreaView>
+    </ScrollView>
   );
 }
 
-const styles = StyleSheet.create({
-
-});
