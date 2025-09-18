@@ -1,13 +1,12 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-
-export default function HomeScreen() {
+export default function TabFourScreen() {
   return (
     <SafeAreaView>
       <ScrollView>
         <View>
-          <Text>Welcome to snapfame</Text>
+          <Text>Profile page</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
