@@ -17,6 +17,13 @@ export default StyleSheet.create({
     marginBottom: 5,
     marginLeft:12
   },
+  title1: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black',
+    marginBottom: 5,
+    marginLeft:12
+  },
   button: {
     backgroundColor: '#ffffffff',
     padding: 12,
@@ -31,6 +38,8 @@ export default StyleSheet.create({
     flex:1,
     width:'100%',
     height:50,
+    display:'flex',
+    flexDirection:'row',
     justifyContent:'space-between'
   },
   profileImage:{
@@ -45,6 +54,11 @@ export default StyleSheet.create({
   },
   column:{
     textAlign:'left'
+  },
+  column1:{
+    textAlign:'left',
+    width:'100%',
+    marginTop:24
   },
   header:{
     backgroundColor:'#5B0C4E',
@@ -61,7 +75,29 @@ export default StyleSheet.create({
     color:'white',
     fontSize:24
   },
-  title1:{
-    textAlign:'left'
+  servicesContainer:{
+    marginTop:16,
+    width:'100%',
+    height:'auto',
+    display:'flex', 
+    flexDirection:'row',
+    flexWrap:'wrap',
+    alignItems:'flex-start',
+    justifyContent:'space-around',
+  },
+  service:{
+    width:80,
+    height:80,
+    borderRadius:12,
+    backgroundColor:'#5b0c4e50',
+    margin:16
+  },
+  notificaton:{
+    width:40,
+    height:40
+  },
+  paddingTop:{
+    marginTop:32
   }
+
 });
